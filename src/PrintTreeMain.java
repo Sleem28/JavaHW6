@@ -7,10 +7,10 @@ public class PrintTreeMain {
 
     public static void main(String[] args) {
 
-        BTree left5 = new BTree(54, null, null);
-        BTree left4 = new BTree(17, null, null);
-        BTree right4 = new BTree(12, null, null);
-        BTree right3 = new BTree(15, null, null);
+        BTree left5 = new BTree(54);
+        BTree left4 = new BTree(17);
+        BTree right4 = new BTree(12);
+        BTree right3 = new BTree(15);
         BTree left2 = new BTree(13,null,left5);
         BTree right2 = new BTree(11,left4,right4);
         BTree left1 = new BTree(5,null, right3);
@@ -19,9 +19,5 @@ public class PrintTreeMain {
 
         BTreePrinter printer = new BTreePrinter();
         printer.printTree(root,"");
-
-
     }
-
-
 }

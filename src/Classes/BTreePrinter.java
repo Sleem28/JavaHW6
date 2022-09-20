@@ -2,6 +2,7 @@ package Classes;
 
 public class BTreePrinter {
     public void printTree(BTree tree, String space) {
+
         if (tree != null) {
             System.out.print(space + tree.o);
             if(tree.leftBranch != null || tree.rightBranch != null){
@@ -12,7 +13,7 @@ public class BTreePrinter {
                 System.out.print(")");
             }
         }else{
-            System.out.print("null");
+            System.out.print("nil");
         }
     }
 }
