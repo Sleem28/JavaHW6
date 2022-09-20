@@ -1,7 +1,7 @@
 package Classes;
 
 public class BTreePrinter {
-    public void printTree(BTree tree, String space) {
+    public void printTree(BTree<Integer> tree, String space) {
 
         if (tree != null) {
             System.out.print(space + tree.o);

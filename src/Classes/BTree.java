@@ -1,11 +1,11 @@
 package Classes;
 
-public class BTree {
+public class BTree<Object> {
     public Object o;
-    public BTree leftBranch;
-    public BTree rightBranch;
+    public BTree<Object> leftBranch;
+    public BTree<Object> rightBranch;
 
-    public BTree(Object o, BTree leftBranch, BTree rightBranch){
+    public BTree(Object o, BTree<Object> leftBranch, BTree<Object> rightBranch){
         this.o = o;
         this.leftBranch = leftBranch;
         this.rightBranch = rightBranch;
